@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="wrap" id="wrap">
+        <div class="biger">
+            <!-- <img src="" alt=""> -->
+        </div>
+        <div class="imgs">
+            <div class="main">
+                <!-- <img src="" alt=""> -->
+                <!-- <div class="mask" id="mask"></div> -->
+            </div>
+            <div class="bottom">
+                <p class="prev">&lt;</p>
+                <div class="box">
+                    <ul class="smaller">
+                        <!-- <li><img src="" alt=""></li> -->
+                    </ul>
+                </div>
+                <p class="next">&gt;</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/magniglass.js"></script>
+<script>
+    (function () {
+
+        // magniglass('wrap');
+
+        // magniglass('wrap2');
+
+        magniglass({
+            ele: 'wrap', //最外层盒子的id(必填)
+            imglist: [
+                "../images/banner1.jpg", "../images/banner2.jpg", "../images/banner3.jpg",
+                "../images/banner4.jpg",
+                "../images/banner5.jpg", "../images/banner1.jpg", "../images/banner2.jpg",
+                "../images/banner3.jpg",
+                "../images/banner4.jpg"
+            ], //图片数据(必填)
+            scal: 2, //大图放大倍数(选填，默认是2倍)
+            speed: 3 //小图运动的图片个数(选填，默认是一次动一张图)
+        });
+
+    })();
+</script>
+
+</html>

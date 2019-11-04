@@ -1,0 +1,208 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper .content {
+  width: 1000px;
+  height: 100%;
+  margin: auto;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+
+
+}
+
+#wrapper .header {
+  width: 100%;
+  height: 88px;
+}
+
+#wrapper .header .content {
+  border-bottom: 3px solid #43a41b;
+}
+
+#wrapper .header .content .logo {
+  width: 210px;
+  height: 100%;
+  float: left;
+  margin-left: 12px;
+}
+
+#wrapper .header .content .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#wrapper .header .content .header_title {
+  float: left;
+  color: #333333;
+  font-size: 24px;
+  line-height: 88px;
+  margin-left: 26px;
+}
+
+#wrapper .header .content .header1 {
+  float: right;
+  margin-right: 27px;
+}
+
+#wrapper .header .content .header1 span {
+  color: #999999;
+  font-size: 18px;
+  line-height: 88px;
+}
+
+#wrapper .header .content .header1 a {
+  color: #333333;
+  font-size: 18px;
+}
+
+#wrapper .header .content .header1 a:hover {
+  text-decoration: underline;
+}
+
+#wrapper .nav {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+}
+
+#wrapper .nav .content .img {
+  width: 600px;
+  height: 100%;
+  float: left;
+  background-image: url(../images/zhuceimg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#wrapper .nav .content .main {
+  width: 300px;
+  height: 100%;
+  margin-right: 50px;
+  float: right;
+}
+
+#wrapper .nav .content .main .main1 input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  padding: 15px;
+  font-size: 16px;
+  color: #aaaaaa;
+}
+
+#wrapper .nav .content .main .main1 .xin {
+  display: block;
+  padding-left: 15px;
+  height: 20px;
+  font-size: 12px;
+}
+
+#wrapper .nav .content .main .main2 {
+  margin-bottom: 35px;
+}
+
+#wrapper .nav .content .main .main2 #yanma {
+  width: 180px;
+  height: 30px;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  padding: 15px;
+  font-size: 16px;
+}
+
+#wrapper .nav .content .main .main2 span {
+  display: block;
+  float: right;
+  width: 100px;
+  height: 30px;
+  background: #43a41b;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+#wrapper .nav .content .main .main3 {
+  font-size: 13px;
+}
+
+#wrapper .nav .content .main .main3 a {
+  color: #609bf9;
+}
+
+#wrapper .nav .content .main .main3 a:hover {
+  text-decoration: underline;
+}
+
+#wrapper .nav .content .main .main4 {
+  width: 100%;
+  height: 40px;
+  background: #43a41b;
+  color: #ffffff;
+  line-height: 40px;
+  text-align: center;
+  margin: 15px 0 18px 0;
+  cursor: pointer;
+}
+
+#wrapper .nav .content .main .main5 {
+  color: #43a469;
+  font-size: 16px;
+}
+
+#wrapper .footer {
+  width: 100%;
+  height: 120px;
+  background: #efefef;
+  overflow: hidden;
+  border-bottom: 30px solid #43a41b;
+}
+
+#wrapper .footer p {
+  color: #606060;
+  text-align: center;
+  line-height: 12px;
+  font-size: 12px;
+}
+
+#wrapper .footer .p1 {
+  margin: 30px 0 18px 0;
+}
+
+#wrapper .footer .p2 {
+  margin-bottom: 15px;
+}
+
+#wrapper .footer .p3 {
+  height: 20px;
+}
+
+#wrapper .footer .p3 span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../images/beian.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#wrapper .footer .p3 a:hover {
+  text-decoration: underline;
+}
+
+#wrapper .footer .p3 a {
+  color: #606060;
+}

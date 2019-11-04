@@ -1,0 +1,688 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.bao {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  height: 100%;
+  width: 1210px;
+  margin: auto;
+}
+
+.zhezhao {
+  background: rgba(0, 0, 0, 0.356);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index: 1;
+}
+
+.header {
+  width: 100%;
+  height: 32px;
+  background: #f5f5f5;
+}
+
+.header .content .nav1 {
+  height: 100%;
+  width: 140px;
+  padding-left: 20px;
+  background-image: url(../images/nav1.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.header .content .nav1 li {
+  width: 140px;
+  height: 32px;
+  position: relative;
+}
+
+.header .content .nav1 li .span1 {
+  display: block;
+  width: 68px;
+  line-height: 32px;
+  float: left;
+  font-size: 13px;
+  color: #606060;
+}
+
+.header .content .nav1 li a {
+  box-sizing: border-box;
+  display: block;
+  width: 70px;
+  height: 31px;
+  float: left;
+  line-height: 32px;
+  text-align: center;
+  font-size: 13px;
+  color: #606060;
+  background-image: url(../images/nav2.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.header .content .nav1 li a:hover {
+  color: #8cb91e;
+}
+
+.header .content .nav1 li .caidan {
+  position: absolute;
+  top: 30px;
+  left: 70px;
+  width: 350px;
+  height: 420px;
+  background: #fff;
+  border: 1px solid #3a9900;
+  color: #757575;
+  box-sizing: border-box;
+  padding: 20px 12px 6px 15px;
+  display: none;
+  z-index: 2;
+}
+
+.header .content .nav1 li .caidan .p1 {
+  font-size: 13px;
+}
+
+.header .content .nav1 li .caidan .p1 span {
+  color: #000;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.header .content .nav1 li .caidan .nava {
+  width: 310px;
+  height: 90px;
+  margin: 10px 0 10px 0;
+}
+
+.header .content .nav1 li .caidan .nava .navl {
+  width: 65px;
+  float: left;
+  color: #757575;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.header .content .nav1 li .caidan .nava .navr {
+  width: 220px;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.header .content .nav1 li .caidan .nava .navr li {
+  width: 40px;
+  height: 18px;
+  line-height: 18px;
+  color: #757575;
+  font-size: 13px;
+  text-align: center;
+}
+
+.header .content .nav1 li .caidan .nava .navr li:hover {
+  background: #3a9900;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header .content .nav1 li .caidan .navb {
+  width: 120px;
+  height: 30px;
+  border: 1px solid #3a9900;
+  color: #757575;
+  font-size: 13px;
+  line-height: 30px;
+  box-sizing: border-box;
+  padding-left: 6px;
+  position: relative;
+  cursor: pointer;
+}
+
+.header .content .nav1 li .caidan .navb .span2 {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border: 5px solid transparent;
+  border-top-color: rgba(128, 128, 128, 0.658);
+  position: absolute;
+  top: 15px;
+  left: 70px;
+}
+
+.header .content .nav1 li .caidan .navc {
+  width: 310px;
+  height: 210px;
+  margin-top: 16px;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  padding: 15px 20px 0 8px;
+  overflow: hidden;
+}
+
+.header .content .nav1 li .caidan .navc .a {
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.header .content .nav1 li .caidan .navc .a .navcl {
+  width: 30px;
+  color: #757575;
+  font-size: 13px;
+  float: left;
+}
+
+.header .content .nav1 li .caidan .navc .a .navcr {
+  width: 250px;
+  height: 50px;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header .content .nav1 li .caidan .navc .a .navcr li {
+  width: 50px;
+  height: 18px;
+  line-height: 18px;
+  color: #757575;
+  font-size: 13px;
+  text-align: center;
+}
+
+.header .content .nav1 li .caidan .navc .a .navcr li:hover {
+  background: #3a9900;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header .content .nav1 li .caidan #x {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+  color: gainsboro;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  cursor: pointer;
+}
+
+.header .content .nav2 {
+  float: left;
+  height: 100%;
+  margin-left: 24px;
+}
+
+.header .content .nav2 li {
+  float: left;
+  height: 100%;
+  line-height: 32px;
+  color: #606060;
+  font-size: 13px;
+}
+
+.header .content .nav2 .nav_1 a {
+  display: block;
+  height: 100%;
+  width: 60px;
+  line-height: 32px;
+  text-align: center;
+  color: #606060;
+}
+
+.header .content .nav2 .nav_1 a:hover {
+  color: #8cb91e;
+  text-decoration: underline;
+}
+
+.header .content .nav3 {
+  float: right;
+  overflow: hidden;
+  height: 100%;
+}
+
+.header .content .nav3 .li1 {
+  width: 75px;
+  background-image: url(../images/nav2.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.header .content .nav3 .li1 .submenu {
+  position: absolute;
+  right: 396px;
+  top: 31px;
+  width: 200px;
+  height: 230px;
+  border: 1px solid #3a9900;
+  box-sizing: border-box;
+  display: none;
+  background: #ffffff;
+}
+
+.header .content .nav3 .li1 .submenu h2 {
+  width: 100%;
+  height: 13px;
+  line-height: 13px;
+  font-size: 13px;
+  color: #606060;
+  text-align: left;
+  margin: 20px 0 10px 6px;
+}
+
+.header .content .nav3 .li1 .submenu h2 a {
+  font-size: 13px;
+  color: #606060;
+}
+
+.header .content .nav3 .li1 .submenu h2 a:hover {
+  color: #8cb91e;
+  text-decoration: underline;
+}
+
+.header .content .nav3 .li1 .submenu .submenu1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header .content .nav3 .li1 .submenu .submenu1 li {
+  font-size: 13px;
+  color: #606060;
+  width: 85px;
+  height: 20px;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.header .content .nav3 .li1 .submenu .submenu1 li:hover {
+  background: #dee1e6;
+}
+
+.header .content .nav3 .li1 .zhe {
+  width: 74px;
+  height: 5px;
+  background: #ffffff;
+  position: absolute;
+  top: 31px;
+  right: 521px;
+}
+
+.header .content .nav3 .li1:hover .submenu {
+  display: block;
+}
+
+.header .content .nav3 .li1:hover {
+  border: 1px solid #3a9900;
+  border-bottom: none;
+  background: #ffffff;
+}
+
+.header .content .nav3 .li1:hover .zhe {
+  display: block;
+}
+
+.header .content .nav3 .li2 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #606060;
+}
+
+.header .content .nav3 .li2 a:hover {
+  color: #8cb91e;
+  text-decoration: underline;
+}
+
+.header .content .nav3 .li3 {
+  width: 70px;
+  background-image: url(../images/nav2.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.header .content .nav3 .li3 .li3a {
+  width: 70px;
+  height: 80px;
+  border: 1px solid #3a9900;
+  position: absolute;
+  top: 32px;
+  right: 367px;
+  box-sizing: border-box;
+  padding: 0 5px 0 5px;
+  background: #ffffff;
+  display: none;
+}
+
+.header .content .nav3 .li3 .li3a .p1 {
+  color: #606060;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.header .content .nav3 .li3 .li3a .p1:hover {
+  background: #dee1e6;
+}
+
+.header .content .nav3 .li3:hover {
+  border: 1px solid #3a9900;
+  border-bottom: none;
+  background: #ffffff;
+}
+
+.header .content .nav3 .li3:hover .li3a {
+  display: block;
+  border-top: none;
+}
+
+.header .content .nav3 .li4 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #606060;
+}
+
+.header .content .nav3 .li4 a:hover {
+  color: #8cb91e;
+  text-decoration: underline;
+}
+
+.header .content .nav3 .tubiao {
+  width: 120px;
+}
+
+.header .content .nav3 .tubiao a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/tubiao.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.header .content .nav3 li {
+  float: left;
+  height: 100%;
+  line-height: 32px;
+  width: 68px;
+  margin-left: 8px;
+  color: #606060;
+  font-size: 13px;
+}
+
+.header .content .nav3 li:hover {
+  color: #8cb91e;
+}
+
+.fix {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.box1 {
+  margin: 61px 0 50px 0;
+}
+
+.box1 #xd {
+  transition: all 1s;
+  width: 100%;
+  background: #ffffff;
+  z-index: 30;
+}
+
+.box1 #xd .content {
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.box1 #xd .content .nav1 {
+  width: 100%;
+  height: 80px;
+}
+
+.box1 #xd .content .nav1 .logo {
+  width: 210px;
+  height: 80px;
+  float: left;
+}
+
+.box1 #xd .content .nav1 .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.box1 #xd .content .nav1 .nav_1 {
+  width: 625px;
+  height: 100%;
+  float: left;
+  margin-left: 72px;
+}
+
+.box1 #xd .content .nav1 .nav_1 .bao {
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.box1 #xd .content .nav1 .nav_1 .bao .main1 {
+  width: 580px;
+  height: 42px;
+  float: left;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.box1 #xd .content .nav1 .nav_1 .bao .main1 .mainl {
+  width: 468px;
+  height: 100%;
+  border: 2px solid #c30000;
+  box-sizing: border-box;
+  padding-left: 38px;
+  float: left;
+  background-image: url(../images/da.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.box1 #xd .content .nav1 .nav_1 .bao .main1 .mainl #sousuo {
+  width: 100%;
+  height: 100%;
+}
+
+.box1 #xd .content .nav1 .nav_1 .bao .main1 .mainr {
+  width: 112px;
+  height: 100%;
+  background: #c30000;
+  float: left;
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 42px;
+  cursor: pointer;
+}
+
+.box1 #xd .content .nav1 .nav_1 .bao .main2 {
+  width: 40px;
+  height: 42px;
+  float: right;
+}
+
+.box1 #xd .content .nav1 .nav_1 .bao .main2 a {
+  display: block;
+  width: 100%;
+  height: 21px;
+  color: #766060;
+  font-size: 15px;
+  text-align: right;
+}
+
+.box1 #xd .content .nav1 .nav_1 .bao .main2 a:hover {
+  color: #8cb91e;
+  text-decoration: underline;
+}
+
+.box1 #xd .content .nav1 .nav_1 .main3 {
+  margin-top: 10px;
+  width: 100%;
+  height: 20px;
+}
+
+.box1 #xd .content .nav1 .nav_1 .main3 a {
+  width: 20px;
+  height: 100%;
+  color: #757575;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.box1 #xd .content .nav1 .nav_1 .main3 a:hover {
+  color: #8cb91e;
+  text-decoration: underline;
+}
+
+.box1 #xd .content .nav1 .logo1 {
+  width: 120px;
+  height: 50px;
+  float: right;
+  background-image: url(../images/logo1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.box1 #xd .content .nav1 .logo2 {
+  margin-top: 15px;
+  width: 120px;
+  height: 50px;
+  float: right;
+  background-image: url(../images/xd.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.nav {
+  border-bottom: 2px solid #318700;
+}
+
+.nav .content .nav2 {
+  width: 100%;
+  height: 46px;
+}
+
+.nav .content .nav2 .main1 {
+  width: 210px;
+  height: 46px;
+  line-height: 46px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  background-color: #2d8800;
+  float: left;
+}
+
+.nav .content .nav2 .main2 {
+  overflow: hidden;
+  float: left;
+}
+
+.nav .content .nav2 .main2 li {
+  float: left;
+}
+
+.nav .content .nav2 .main2 li a {
+  display: inline-block;
+  height: 38px;
+  margin: 5px 0 3px 0px;
+  padding: 0 11px;
+  font: 16px/38px "Microsoft YaHei";
+  text-align: center;
+  color: #383838;
+}
+
+.nav .content .nav2 .main2 li a:hover {
+  color: #8cb91e;
+}
+
+.nav .content .nav2 .main3 {
+  width: 200px;
+  height: 100%;
+  float: right;
+  cursor: pointer;
+}
+
+.nav .content .nav2 .main3 .span1 {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 13px 15px 0 30px;
+  background-image: url(../images/che.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+
+.nav .content .nav2 .main3 .span2 {
+  display: block;
+  height: 100%;
+  width: 50px;
+  float: left;
+}
+
+.nav .content .nav2 .main3 .span2 a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #606060;
+  font-size: 16px;
+  line-height: 42px;
+}
+
+.nav .content .nav2 .main3 .span2 a:hover {
+  color: #8cb91e;
+  text-decoration: underline;
+}
+
+.nav .content .nav2 .main3 .san {
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-top-color: #cccccc;
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
+}

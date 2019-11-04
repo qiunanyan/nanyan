@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zhuye</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #main {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+
+        #head {
+            width: 100%;
+            height: 88px;
+            background: #7ab5e9;
+        }
+
+        #head h2 {
+            float: left;
+            color: #ffffff;
+            line-height: 88px;
+            margin-left: 10px;
+        }
+
+        #tuichu {
+            float: right;
+            width: 60px;
+            height: 30px;
+            margin: 15px 10px 0 0;
+            border-radius: 8px;
+            background: goldenrod;
+        }
+
+        #wrap {
+            width: 100%;
+            height: calc(100% - 88px);
+
+        }
+
+        #menu {
+            width: 250px;
+            float: left;
+            height: 100%;
+            background: #417ec8;
+        }
+
+        #menu li {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 8px;
+            color: #000;
+            box-sizing: border-box;
+        }
+
+        #menu .active {
+            background: lightsalmon;
+        }
+
+        #rigth {
+            height: 100%;
+            width: calc(100% - 250px);
+            background: #ffffff;
+            float: left;
+        }
+
+        .yes {
+            float: right;
+            margin: 20px 50px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="head">
+            <h2>xx电商管理系统平台</h2>
+            <p class="yes">hi,欢迎来到系统平台</p>
+            <input type="button" value="登录" id="tuichu">
+        </div>
+        <div id="wrap">
+            <div id="menu">
+                <ul>
+                    <li class="active">用户管理</li>
+                    <li>商品信息管理</li>
+                    <li>订单管理</li>
+                </ul>
+            </div>
+            <div id="rigth">
+                <iframe width="100%" height="100%" id="content" src="guanli.html" frameborder="0"></iframe>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/common.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script>
+    (function () {
+        function itn() {
+            let name = getCookie('name');
+            if (name) {
+                //证明登录状态
+                let html = name + ',欢迎来到系统平台';
+                $('.yes').html(html);
+                $('#tuichu').val('退出');
+            } else {
+                $('.yes').html('hi,欢迎来到系统平台');
+                $('#tuichu').val('登录');
+            }
+        }
+        itn();
+        //1.点击按钮退出
+        $('#tuichu').click(function () {
+            if ($('#tuichu').val() == '退出') {
+                removeCookie('name');
+                $('#tuichu').val('登录');
+            } else {
+                location.href = 'login.html';
+            }
+            itn();
+
+        });
+        //2.点击左边菜单栏，切换content页面
+        let arr = ['guanli.html', 'shangpin.html', 'dingdan.html'];
+        $('#menu li').click(function () {
+            $(this).addClass('active').siblings().removeClass('active'); //点击高亮
+            let url = arr[$(this).index()];
+            $('#content').attr('src', url); //设置属性的，改content的路径
+        });
+    })();
+</script>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品信息</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background: rgba(128, 128, 128, 0.377);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            line-height: 30px;
+            color: #000000;
+            margin: 10px 0 10px 0;
+        }
+
+        table {
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+
+        th {
+            border: 1px solid #ddd;
+            text-align: center;
+            width: 50px;
+            height: 35px;
+            line-height: 35px;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            text-align: center;
+            width: 50px;
+            height: 35px;
+            line-height: 35px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>商品信息</h1>
+
+    <div id="biaoge">
+        <table id="table1">
+            <thead>
+                <tr>
+                    <th>全选/不选<input type="checkbox" name="all" id="all"></th>
+                    <th>反选<input type="checkbox" name="fx" id="fx"></th>
+                    <th><a href="###" id="shan1">删除</a></th>
+
+                </tr>
+                <tr>
+                    <th>#</th>
+                    <th>用户名</th>
+                    <th>商品id</th>
+                    <th>数量</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td contenteditable="true">3</td>
+                    <td><a href="###" class="gai">更改并保存</a>
+                        <a href="###" class="shan2">删除</a>
+                    </td>
+                </tr> -->
+
+
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="../js/common.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/shangp.js"></script>
+
+</html>

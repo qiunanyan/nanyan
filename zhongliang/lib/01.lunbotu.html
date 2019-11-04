@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播图基本版</title>
+    <link rel="stylesheet" href="css2.css">
+</head>
+
+<body>
+    <div id="box">
+        <!--图片列表-->
+        <div class="imglist">
+            <ul>
+                <!-- <li><img src="img/001.jpg" alt=""></li>
+                <li><img src="img/002.jpg" alt=""></li>
+                <li><img src="img/003.jpg" alt=""></li>
+                <li><img src="img/004.jpg" alt=""></li> -->
+
+            </ul>
+        </div>
+        <!--焦点图-->
+        <p class="light">
+            <!-- <span class="active">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span> -->
+        </p>
+        <!--上下按钮-->
+        <div class="posibtn">
+            <p class="prev">&lt;</p>
+            <p class="next">&gt;</p>
+        </div>
+    </div>
+
+</body>
+<script src="wei-common.js"></script>
+<script src="rotationchart.js"></script>
+<script>
+    (function () {
+
+        rotationchart({
+            ele: 'box', //最外层id名(必选参数)
+            iw: 800, //盒子的宽和高(可选参数)
+            ih: 350, //盒子的宽和高(可选参数)
+            imgurl: ['img/001.jpg', 'img/002.jpg', 'img/003.jpg', 'img/004.jpg'], //图片数据(必选参数)
+            time: 3 //切换图片的秒数(可选参数)
+        });
+
+
+
+    })();
+</script>
+
+</html>

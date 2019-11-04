@@ -1,0 +1,492 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wei {
+  width: 1000px;
+  margin: auto;
+}
+
+.wei .header_b {
+  width: 1000px;
+  height: 95px;
+}
+
+.wei .header_b .logo_a {
+  width: 210px;
+  height: 80px;
+  float: left;
+  margin-top: 7px;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.wei .header_b .tu {
+  width: 643px;
+  height: 38px;
+  float: right;
+  margin-top: 30px;
+  background-image: url(../images/jindu);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.wei .trip {
+  height: 36px;
+  margin: 4px 0px 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.wei .trip .tr_1 {
+  height: 36px;
+  line-height: 36px;
+  float: left;
+  margin-right: 30px;
+  font: 20px "Microsoft YaHei";
+  color: #606060;
+  line-height: 36px;
+}
+
+.wei .trip .tr_2 {
+  height: 36px;
+  float: left;
+  font-size: 12px;
+  color: #666;
+  line-height: 36px;
+}
+
+.wei .trip .tr_2 .kua {
+  display: inline-block;
+  width: 132px;
+  height: 28px;
+  padding: 0 17px 0 5px;
+  line-height: 28px;
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.wei .trip .tr_3 {
+  float: right;
+  margin-top: 8px;
+}
+
+.wei .trip .tr_3 a {
+  color: #666;
+  font-size: 12px;
+}
+
+.wei .trip .tr_3 a:hover {
+  text-decoration: underline;
+}
+
+.wei .nav_a {
+  width: 1000px;
+  height: 34px;
+  line-height: 34px;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.wei .nav_a .ua {
+  width: 166px;
+  height: 100%;
+  float: left;
+}
+
+.wei .nav_a .ua li {
+  width: 100%;
+  height: 100%;
+  color: #7abd54;
+  border-bottom: 2px solid #7abd54;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wei .nav_a .clear {
+  width: 300px;
+  height: 100%;
+  float: right;
+}
+
+.wei .nav_a .clear .fl {
+  font-size: 12px;
+  line-height: 34px;
+  color: #606060;
+}
+
+.wei .nav_a .clear .fl i {
+  font-size: 14px;
+  color: red;
+}
+
+.wei .nav_a .clear a {
+  display: block;
+  width: 60px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  background: red;
+  color: #fff;
+  margin-left: 15px;
+  font-size: 14px;
+  float: right;
+}
+
+.wei .order {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.wei .order .top_a {
+  width: 100%;
+  height: 30px;
+}
+
+.wei .order .top_a .top_1 {
+  width: 494px;
+  height: 100%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  color: #606060;
+  float: left;
+}
+
+.wei .order .top_a .top_2 {
+  width: 90px;
+  height: 100%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  color: #606060;
+  float: left;
+}
+
+.wei .order .top_a .top_3 {
+  width: 130px;
+  height: 100%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  color: #606060;
+  float: left;
+}
+
+.wei .order .top_a .top_4 {
+  width: 90px;
+  height: 100%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  color: #606060;
+  float: left;
+}
+
+.wei .order .top_a .top_5 {
+  width: 106px;
+  height: 100%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  color: #606060;
+  float: left;
+}
+
+.wei .order .tip {
+  text-align: right;
+  color: red;
+  font-size: 12px;
+  line-height: 34px;
+}
+
+.wei .order .con {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-top: 0;
+}
+
+.wei .order .con .con_top {
+  padding: 0 5px;
+  height: 24px;
+  border-top: 1px solid #ccc;
+  background-color: #ccc;
+  line-height: 24px;
+  color: #606060;
+  font-size: 12px;
+}
+
+.wei .order .con .con_zhu {
+  width: 100%;
+  height: 91px;
+  background: #fcfcfc;
+  border-top: 1px solid #ccc;
+  padding: 15px 0 0 20px;
+  box-sizing: border-box;
+}
+
+.wei .order .con .con_zhu .con_l {
+  width: 492px;
+  height: 100%;
+  float: left;
+}
+
+.wei .order .con .con_zhu .con_l input {
+  float: left;
+  margin: 30px 15px 0 15px;
+}
+
+.wei .order .con .con_zhu .con_l img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #DCDDDD;
+  float: left;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.wei .order .con .con_zhu .con_l .wen {
+  width: 330px;
+  float: left;
+}
+
+.wei .order .con .con_zhu .con_l .wen a {
+  color: #606060;
+  font-size: 12px;
+}
+
+.wei .order .con .con_zhu .con_l .wen a:hover {
+  color: #7abd54;
+  text-decoration: underline;
+}
+
+.wei .order .con .con_zhu .con_2 {
+  width: 90px;
+  float: left;
+  text-align: center;
+  color: #3c3c3c;
+  font-size: 12px;
+  padding-top: 32px;
+}
+
+.wei .order .con .con_zhu .con_3 {
+  width: 110px;
+  padding: 32px 0 0 20px;
+  float: left;
+}
+
+.wei .order .con .con_zhu .con_3 .jian {
+  width: 21px;
+  height: 21px;
+  background: rgba(204, 204, 204, 0.767);
+  float: left;
+  text-align: center;
+  line-height: 21px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.wei .order .con .con_zhu .con_3 .text1 {
+  width: 34px;
+  height: 21px;
+  float: left;
+  margin: 0 5px 0 5px;
+  display: block;
+  color: #595757;
+  text-align: center;
+  border: #e6e6e6 1px solid;
+}
+
+.wei .order .con .con_zhu .con_3 .jia {
+  width: 21px;
+  height: 21px;
+  background: rgba(204, 204, 204, 0.767);
+  float: left;
+  text-align: center;
+  line-height: 21px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.wei .order .con .con_zhu .con_4 {
+  width: 90px;
+  padding-top: 32px;
+  color: #999;
+  float: left;
+}
+
+.wei .order .con .con_zhu .con_5 {
+  width: 90px;
+  padding-top: 32px;
+  float: left;
+  text-align: center;
+  color: red;
+}
+
+.wei .order .con .con_zhu .con_6 {
+  width: 80px;
+  height: 60px;
+  padding-top: 20px;
+  float: left;
+}
+
+.wei .order .con .con_zhu .con_6 p {
+  text-align: center;
+}
+
+.wei .order .con .con_zhu .con_6 p a {
+  text-align: center;
+  color: #3c3c3c;
+  font-size: 12px;
+}
+
+.wei .order .con .con_zhu .con_6 .shou:hover a {
+  text-decoration: underline;
+  color: red;
+}
+
+.wei .order .con .con_zhu .con_6 .shan:hover a {
+  text-decoration: underline;
+  color: #7abd54;
+}
+
+.wei .order .mai {
+  width: 100%;
+  height: 186px;
+  margin-bottom: 100px;
+}
+
+.wei .order .mai .mai_l {
+  width: 465px;
+  height: 140px;
+  float: left;
+}
+
+.wei .order .mai .mai_l .mai_a {
+  width: 220px;
+  height: 60px;
+  line-height: 60px;
+  color: #606060;
+  font-size: 12px;
+}
+
+.wei .order .mai .mai_l .mai_a a {
+  color: #606060;
+  font-size: 12px;
+  margin: 0 10px 0 10px;
+}
+
+.wei .order .mai .mai_l .mai_a a:hover {
+  text-decoration: underline;
+}
+
+.wei .order .mai .mai_l .mai_b a {
+  color: #e9001c;
+  font-size: 12px;
+}
+
+.wei .order .mai .mai_l .mai_b a:hover {
+  text-decoration: underline;
+}
+
+.wei .order .mai .mai_r {
+  float: right;
+  width: 310px;
+  margin-top: 18px;
+}
+
+.wei .order .mai .mai_r .ra_1 {
+  text-align: right;
+  margin-right: 8px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.wei .order .mai .mai_r .ra_1 span {
+  margin-left: 50px;
+  margin-right: 3px;
+  color: #e9001c;
+}
+
+.wei .order .mai .mai_r .ra_2 {
+  text-align: right;
+  margin-right: 8px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.wei .order .mai .mai_r .ra_2 .ra2 {
+  color: #e9001c;
+}
+
+.wei .order .mai .mai_r .ra_3 {
+  text-align: right;
+  margin-right: 8px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.wei .order .mai .mai_r .money {
+  width: 100%;
+  height: 86px;
+  margin-top: 8px;
+  border-top: 1px solid #cccccc;
+}
+
+.wei .order .mai .mai_r .money .total {
+  font-size: 12px;
+  color: #606060;
+}
+
+.wei .order .mai .mai_r .money .total .jianshu {
+  font-size: 14px;
+  color: #e9001c;
+}
+
+.wei .order .mai .mai_r .money .total .yinfu {
+  margin-left: 50px;
+}
+
+.wei .order .mai .mai_r .money .total .jiege {
+  font-size: 16px;
+  color: #e9001c;
+  margin-left: 50px;
+}
+
+.wei .order .mai .mai_r .money .poh {
+  width: 170px;
+  height: 36px;
+  text-align: center;
+  color: #fff;
+  background: #e9001c;
+  line-height: 36px;
+  float: right;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.wei .order .mai .mai_r .money .poh:hover {
+  background: #e98400a2;
+}
+
+.wei .wei {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 60px;
+}
+
+.wei .wei .p1 {
+  color: #606060;
+  font-size: 12px;
+}
+
+.wei .wei .p2 {
+  color: #606060;
+  font-size: 10px;
+}

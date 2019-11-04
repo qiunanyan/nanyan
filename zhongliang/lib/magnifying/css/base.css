@@ -1,0 +1,270 @@
+/*(1)清除默认样式*/
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset,
+img,
+input,
+button {
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+/*去掉input等聚焦时的蓝色边框*/
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+/* 行内元素的垂直居中 */
+/* 
+vertical-align：top 
+
+*/
+select,
+input {
+    vertical-align: middle;
+}
+
+/*select, input, textarea { font-size:12px; margin:0; }*/
+/*防止拖动*/
+textarea {
+    resize: none;
+}
+
+/*  去掉图片低测默认的3-4像素空白缝隙，或者用display：block也可以*/
+/* table { border-collapse:collapse; } */
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+/*清除浮动（不管）*/
+.clearfix:before,
+.clearfix:after {
+    /*清楚浮动*/
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*IE/7/6*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+/* 设置h标签的大小，设置跟父亲一样大的字体font-size:100%; */
+
+s,
+i,
+em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.ac {
+    text-align: center;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+/* --解决高度塌陷-- */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* --解决高度塌陷-- */
+
+
+/* --单行文本溢出省略号
+
+width: 100%;(宽度)
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis; */
+
+/* --单行文本溢出省略号-- */
+
+
+/*  多行省略号
+
+width: 100%;(宽度) 
+overflow : hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;(2代表第二行出现省略号)
+-webkit-box-orient: vertical;
+
+/* */
+
+/* 选择符 */
+/* a:link {color: red;}                 未访问的链接状态 
+a:visited {color: green;}               已访问的链接状态 
+a:hover {color: blue;}                  鼠标滑过链接状态 
+a:active {color: yellow;}               鼠标按下去时的状态  */
+
+/* 超链接 
+<a href=“目标文件路径及全称或者连接地址” title=“提示文本”>链接文本或图片</a>
+<a href="#">空链接</a>
+属性：
+href 部分中url后边跟的是链接页面的路径(包含文件名)
+title属性,加入这个属性后,当鼠标移动到时,则在鼠标下方显示title的内容;
+target  属性参数定义了打开链接的目标窗口。
+_blank -- 在新窗口中打开链接 页面（会保留原窗口）
+_self -- 在当前窗口打开链接页面，此为默认值 */
+
+/* 
+1. 表单的控件
+
+
+语法：<input  type=" "  name=" "  value=" "  size=" "  maxlength=" "    />
+说明：
+Input：标记可以创建按钮、文本输入框、选择框等各种类型的输入字段。
+name：属性标识表单域的名称；
+type：属性标识表单控件的类型，大概有十几种；
+Value：属性定义表单域的默认值，其他属性根据type的不同而有所变化。
+maxlength：控制最多输入的字符数，
+Size：控制框的宽度（以字符为单位）
+Input的type类型：
+1）文本框
+<input type="text" value="默认值"/>
+2)密码框
+<input type="password" />
+3)提交按钮
+<input type="submit" value="按钮内容" />
+4)重置按钮
+<input type="reset" value="按钮内容" />
+5)空按钮
+<input type="button" value="按钮内容" />
+6）单选按钮组
+<input type=“radio” name=“ral” />男
+<input type=“radio” name=“ral”
+checked=“checked”/>(默认选中)女
+7）复选框组
+<input type="checkbox" name="" />
+<input type="checkbox" name="" disabled="disabled" />
+ *  disabled="disabled" (禁用)
+ *  checked="checked"   (默认选中)
+	1. 
+下拉菜单
+
+
+语法：
+<select >
+        <option>下拉选项1</option>
+        <option>下拉选项2</option>
+        …………
+</select>
+说明：表示下拉列表，name属性不是必须的，默认选择项用selected属性；
+	1. 
+文本域
+
+
+语法：<textarea name=""  cols=""  rows="" ></textarea>
+说明：多行文本。rows属性和cols属性用来设置文本输入窗口的高度和宽度，单位是字符。 */
+
+
+/* 给a 添加定位边框符号 a要加position:relative;
+a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -3px; */
+
+/* 实现圆角（border-radius），阴影（box-shadow），边框图片border-image */
+
+
+/* 实现动画效果 
+ul li p {
+    height: 0;  隐藏的意思
+    overflow: auto;
+    transition: height 6s;
+}
+
+ul li:target p {
+    height: 320px;     出现
+}
+
+ul li:target a {
+    background: rgb(140, 140, 247);
+}
+
+ul li:target a::after {
+    border: 6px solid transparent;
+    border-left-color: #ffffff;
+    margin-top: -6px;
+} */

@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #2e363f;
+}
+
+.login {
+    width: 600px;
+    height: 450px;
+    // border: 1px solid red;
+    margin: 100px auto;
+
+    .login-top {
+        border-bottom: 1px solid #616161;
+
+        h1 {
+            font-size: 28px;
+            color: #b2dfee;
+            text-align: center;
+            line-height: 28px;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 17px;
+            margin-bottom: 17px;
+            color: #6b8080;
+            text-align: center;
+        }
+    }
+
+    .login-1 {
+        h2 {
+            font-size: 20px;
+            line-height: 20px;
+            color: #b2dfe3;
+            margin: 16px 0 7px 0;
+        }
+
+        p {
+            overflow: hidden;
+
+            span {
+                display: block;
+                width: 60px;
+                height: 48px;
+                background: #28b779;
+                float: left;
+                text-align: center;
+                line-height: 48px;
+            }
+
+            input {
+                width: 536px;
+                height: 44px;
+                float: left;
+            }
+        }
+    }
+
+    .login-2 {
+        h2 {
+            font-size: 20px;
+            line-height: 20px;
+            color: #b2dfe3;
+            margin: 16px 0 7px 0;
+        }
+
+        p {
+            overflow: hidden;
+
+            span {
+                display: block;
+                width: 60px;
+                height: 48px;
+                background: #ffb848;
+                float: left;
+                text-align: center;
+                line-height: 48px;
+            }
+
+            input {
+                width: 536px;
+                height: 44px;
+                float: left;
+            }
+        }
+    }
+
+    .login-3 {
+        box-sizing: border-box;
+        padding: 34px 0 24px 0;
+        overflow: hidden;
+        border-bottom: 1px solid #616161;
+
+        .left {
+            width: 120px;
+            height: 36px;
+            background: #49afcd;
+            float: left;
+            font-size: 16px;
+            line-height: 36px;
+            text-align: center;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .right {
+            width: 470px;
+            height: 36px;
+            background: #5bb75b;
+            float: right;
+            font-size: 16px;
+            line-height: 36px;
+            text-align: center;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    }
+
+    .login-4 {
+        text-align: center;
+        font-size: 17px;
+        color: #808080;
+        margin-top: 20px;
+    }
+}
+
+.login:nth-child(2) {
+    display: none;
+
+}
